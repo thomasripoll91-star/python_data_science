@@ -1,0 +1,28 @@
+EDA - 1 : 
+
+Interprétation : Nous commençons par faire cet étape afin d'avoir un aperçu global de notre dataset et des données qu'il contient, ainsi que le profil client.
+
+Volume et pertinence : Le dataset contient 7043 lignes et 21 colonnes. C'est un volume de données tout à fait satisfaisant pour entraîner notre algorithme.
+
+ On peut voir qu'une grande partie des données est représentée sous forme "Yes" ou "Non", semblable à un fonctionnement booléen (par exemple : La colonne "partner").
+
+ Le résultat de la colonne " Non-Null Count" nous confirme que notre dataset est bien remplie pour toute sles colonnes
+
+EDA - 2 : 
+
+Interprétation : 
+
+##Variables numériques :
+
+- On remarque que l'ancienneté (tenure) moyennes de nos clients est de 32 mois mais qu'il y a de gros écarts : le minimum allant de 0 (clients tout nouveux) et maximum atteignant 72
+
+- Pour ce qui est du prix payé, la facture mensuelle varie de 18,25 à 118,75, avec une moyenne autour de 64,76
+
+- Etant donné que SeniorCitizen est un booléen : valeur à 0 ou 1. La moyenne à environ 0.16 nous fait comprendre que nous avons environ 16% de nos clients étant seniors
+
+##Variables catégorielles :    
+
+- Pour notre colonne la plus importante : churn, nous pouvons voir que la valeur la plus fréquente est "No", ce qui signifie que la plupart des clients restent et nous pouvons voir que nous avons un jeu de données déséquilibré de par le fait qu'il y ait plus de "no" que de "yes".
+
+- Nous pouvons aussi voir que le type de contrat le plus répendu est le "month-to-month" : c'est trop tôt pour affirmer si cela a un impact sur la volonté d'un utilisateur de partir mais celareste bien à garder en têtepour de futures hypothèses.
+
