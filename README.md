@@ -5,7 +5,7 @@ Ce projet se divise en deux grandes parties : un **Notebook d'analyse** (pour la
 
 ---
 
-## 📓 1. Le Notebook de Data Science
+##  1. Le Notebook de Data Science
 Le fichier Jupyter Notebook contient toute la démarche analytique du projet :
 * **Analyse Exploratoire (EDA) :** Visualisation et compréhension du comportement des clients.
 * **Préparation des données :** Nettoyage, sélection des variables (Feature Engineering) et équilibrage des classes.
@@ -14,10 +14,10 @@ Le fichier Jupyter Notebook contient toute la démarche analytique du projet :
 
 ---
 
-## 🚀 2. L'API REST (Déploiement)
+##  2. L'API REST (Déploiement)
 L'API est construite avec FastAPI. Elle charge notre modèle XGBoost pré-entraîné pour évaluer instantanément la probabilité de départ d'un client donné.
 
-### 🛠️ Installation
+###  Installation
 
 Ouvrez votre terminal et exécutez ces commandes :
 
@@ -34,9 +34,9 @@ source env/bin/activate  # Sur Windows : env\Scripts\activate
 pip install -r requirements.txt
 \`\`\`
 
-### 🚀 Démarrage
+###  Démarrage
 
-**⚠️ Important :** Le serveur doit être lancé depuis le dossier `API`.
+**Important :** Le serveur doit être lancé depuis le dossier `API`.
 
 \`\`\`bash
 # 1. Entrer dans le dossier contenant l'API
@@ -45,12 +45,12 @@ cd API
 # 2. Lancer le serveur local
 uvicorn app:app --reload
 \`\`\`
-🌐 L'API tourne maintenant sur : **http://127.0.0.1:8000**
+ L'API tourne maintenant sur : **http://127.0.0.1:8000**
 
-### 🧪 Tester le modèle
+### Tester le modèle
 
 #### Option A : Interface Visuelle (Recommandé)
-1. Ouvrez 👉 **http://127.0.0.1:8000/docs**
+1. Ouvrez  **http://127.0.0.1:8000/docs**
 2. Déroulez la route `POST /predict` et cliquez sur **"Try it out"**.
 3. Remplissez les infos du client et cliquez sur **"Execute"**.
 
