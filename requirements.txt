@@ -1,0 +1,13 @@
+# --- Cœur du Machine Learning ---
+pandas==2.2.0
+scikit-learn==1.4.0
+xgboost==2.0.3
+
+# --- API et Serveur ---
+fastapi==0.109.2
+uvicorn==0.27.1
+pydantic==2.6.1
+
+# --- Visualisation (Optionnel pour l'API, utile pour l'entraînement) ---
+matplotlib==3.8.2
+seaborn==0.13.2
