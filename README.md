@@ -21,30 +21,37 @@ L'API est construite avec FastAPI. Elle charge notre modèle XGBoost pré-entra�
 
 Ouvrez votre terminal et exécutez ces commandes :
 
-\`\`\`bash
+
 # 1. Cloner le projet
+
+```bash
 git clone <votre-lien-github>
 cd <nom-du-dossier>
+```
+
 
 # 2. Créer et activer l'environnement virtuel
+```bash
 python -m venv env
 source env/bin/activate  # Sur Windows : env\Scripts\activate
+```
 
 # 3. Installer les dépendances
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ###  Démarrage
 
 **Important :** Le serveur doit être lancé depuis le dossier `API`.
 
-\`\`\`bash
+```bash
 # 1. Entrer dans le dossier contenant l'API
 cd API
 
 # 2. Lancer le serveur local
 uvicorn app:app --reload
-\`\`\`
+```
  L'API tourne maintenant sur : **http://127.0.0.1:8000**
 
 ### Tester le modèle
@@ -55,7 +62,7 @@ uvicorn app:app --reload
 3. Remplissez les infos du client et cliquez sur **"Execute"**.
 
 #### Option B : Terminal (cURL)
-\`\`\`bash
+```bash
 curl -X 'POST' 'http://127.0.0.1:8000/predict' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -64,4 +71,4 @@ curl -X 'POST' 'http://127.0.0.1:8000/predict' \
   "num__tenure": 5,
   "num__MonthlyCharges": 85.50
 }'
-\`\`\`
+```
