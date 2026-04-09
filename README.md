@@ -1,4 +1,4 @@
-# 📊 Projet Data Science - Prédiction de Désabonnement (Churn)
+# Projet Data Science - Prédiction de Désabonnement (Churn)
 **Auteurs :** DIALLO Bintou & RIPOLL Thomas
 
 Ce projet se divise en deux grandes parties : un **Notebook d'analyse** (pour la recherche et la création du modèle) et une **API REST** (pour rendre le modèle utilisable en temps réel).
