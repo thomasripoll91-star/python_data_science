@@ -75,15 +75,15 @@ curl -X 'POST' 'http://127.0.0.1:8000/predict' \
 
 ---
 
-#Dépoiement avec le Dockerfile
+# Dépoiement avec le Dockerfile
 
 Pour garantir que le projet fonctionne exactement de la même manière sur n'importe quelle machine, nous avons inclus un Dockerfile. Cela permet de lancer l'API dans un environnement isolé sans avoir à installer Python ou les dépendances localement.
 
-####Prérequis : 
+#### Prérequis : 
 
 - Avoir Docker Desktop installé et lancé sur votre machine.
 
-####Etapes de déploiement : 
+#### Etapes de déploiement : 
 
 1. Ouvrir un terminal à la racine du projet (là où se trouve le fichier "Dockerfile")
 
