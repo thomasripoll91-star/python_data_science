@@ -25,8 +25,8 @@ Ouvrez votre terminal et exécutez ces commandes :
 # 1. Cloner le projet
 
 ```bash
-git clone <votre-lien-github>
-cd <nom-du-dossier>
+git clone https://github.com/thomasripoll91-star/python_data_science.git
+cd python_data_science
 ```
 
 
@@ -72,3 +72,36 @@ curl -X 'POST' 'http://127.0.0.1:8000/predict' \
   "num__MonthlyCharges": 85.50
 }'
 ```
+
+---
+
+#Dépoiement avec le Dockerfile
+
+Pour garantir que le projet fonctionne exactement de la même manière sur n'importe quelle machine, nous avons inclus un Dockerfile. Cela permet de lancer l'API dans un environnement isolé sans avoir à installer Python ou les dépendances localement.
+
+####Prérequis : 
+
+- Avoir Docker Desktop installé et lancé sur votre machine.
+
+####Etapes de déploiement : 
+
+1. Ouvrir un terminal à la racine du projet (là où se trouve le fichier "Dockerfile")
+
+2. Construire l'image Docker : 
+
+```bash
+docker build -t api-churn .
+```
+
+3. Lancer le conteneur : 
+
+```bash
+docker run -p 8000:8000 api-churn
+```
+
+4. Accéder à l'interface : 
+Une fois lancé l'API est accessible directement sur : 
+
+http://127.0.0.1:8000/docs
+
+
